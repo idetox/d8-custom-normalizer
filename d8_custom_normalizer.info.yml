@@ -1,0 +1,6 @@
+name: 'D8 Custom Normalizer'
+type: module
+core: 8.x
+dependencies:
+  - node
+  - serialization
