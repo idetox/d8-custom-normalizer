@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\d8_custom_normalizer\Controller;
+namespace Drupal\d8_custom_serializer\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 

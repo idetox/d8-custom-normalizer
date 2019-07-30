@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\d8_custom_normalizer\Normalizer;
+namespace Drupal\d8_custom_serializer\Normalizer;
 
 use Drupal\node\Entity\Node;
 use Drupal\serialization\Normalizer\EntityNormalizer;
 
-class NodeArticleNormalizer extends EntityNormalizer
+class CustomNodeNormalizer extends EntityNormalizer
 {
   protected $supportedInterfaceOrClass = Node::class;
 
@@ -14,7 +14,8 @@ class NodeArticleNormalizer extends EntityNormalizer
    */
   public function supportsNormalization($data, $format = NULL): bool
   {
-    return parent::supportsNormalization($data, $format) && 'json' === $format && 'article' === $data->getType();
+    // TODO add checks
+    return parent::supportsNormalization($data, $format);
   }
 
   /**
@@ -22,6 +23,7 @@ class NodeArticleNormalizer extends EntityNormalizer
    */
   public function supportsDenormalization($data, $type, $format = NULL): bool
   {
+    // TODO add checks
     return parent::supportsDenormalization($data, $type, $format);
   }
 
