@@ -1,4 +1,4 @@
-# d8_custom_normalizer module
+# d8_custom_serializer module
 
 The purpose of this module is to provide some basis to customize normalizer
 
@@ -18,3 +18,13 @@ The purpose of this module is to provide some basis to customize normalizer
 4. Alter `supportsDenormalization` method, this method determine weather the normalizer will be used during the deserialization process or not.
          
 5. Alter `denormalize` method, this method transform an array to an entity
+
+### Customize the Encoder file
+
+1. Alter `supportsEncoding` method, this method determine weather the encoder will be used during the serialization process or not.
+
+2. Alter `encode` method, this method transform an array to json
+
+3. Alter `supportsDecoding` method, this method determine weather the encoder will be used during the deserialization process or not.
+         
+4. Alter `decode` method, this method transform a json to an array
