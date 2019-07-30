@@ -1,13 +1,13 @@
 article.get:
   path: 'api/article/get.json'
-  defaults: { _controller: '\Drupal\d8_custom_normalizer\Controller\GetArticleController' }
+  defaults: { _controller: '\Drupal\d8_custom_serializer\Controller\GetArticleController' }
   methods:  [GET]
   requirements:
     _access: 'TRUE'
 
 article.list:
   path: 'api/article/list.json'
-  defaults: { _controller: '\Drupal\d8_custom_normalizer\Controller\ListArticleController' }
+  defaults: { _controller: '\Drupal\d8_custom_serializer\Controller\ListArticleController' }
   methods:  [GET]
   requirements:
     _access: 'TRUE'

@@ -1,6 +1,6 @@
 services:
- article.normalizer.node:
-   class: Drupal\d8_custom_normalizer\Normalizer\NodeArticleNormalizer
+  d8_custom_serializer.normalizer:
+   class: Drupal\d8_custom_serializer\Normalizer\CustomNodeNormalizer
    tags:
      - { name: normalizer }
    arguments: ['@entity_type.manager', '@entity_type.repository', '@entity_field.manager']
