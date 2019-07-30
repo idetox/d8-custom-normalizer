@@ -4,3 +4,7 @@ services:
    tags:
      - { name: normalizer }
    arguments: ['@entity_type.manager', '@entity_type.repository', '@entity_field.manager']
+  d8_custom_serializer.encoder:
+   class: Drupal\d8_custom_serializer\Encoder\CustomEncoder
+   tags:
+     - { name: encoder, format: json }
